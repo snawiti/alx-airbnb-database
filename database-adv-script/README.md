@@ -2,7 +2,7 @@
 # Airbnb Database – Advanced SQL Joins
 
 This project is part of the **ALX Airbnb Database Module**.  
-The objective of this task is to practice **complex SQL queries using different types of JOINs** to retrieve and analyze data from an Airbnb-like database.
+The objective of this task is to practice **complex SQL queries using different types of JOINs** to retrieve and analyze the data from an Airbnb-like database.
 
 ---
 
