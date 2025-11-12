@@ -15,3 +15,21 @@ Practice writing correlated and non-correlated subqueries in SQL.
        GROUP BY r.property_id
        HAVING AVG(r.rating) > 4.0
    );
+
+# Aggregations and Window Functions
+
+## Objective
+Use SQL aggregation and window functions to analyze Airbnb data.
+
+## Queries Implemented
+
+### 1. Total Number of Bookings per User
+```sql
+SELECT 
+    u.id AS user_id,
+    u.name AS user_name,
+    COUNT(b.id) AS total_bookings
+FROM users u
+LEFT JOIN bookings b ON u.id = b.user_id
+GROUP BY u.id, u.name
+ORDER BY total_bookings DESC;
